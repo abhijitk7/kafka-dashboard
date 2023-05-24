@@ -1,0 +1,112 @@
+<main id="main" class="main">
+   <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+         </ol>
+      </nav>
+   </div>
+   <section class="section dashboard">
+      <div class="row">
+         <div class="col-lg-16">
+            <div class="row">
+               <div class="col-xxl-3 col-md-4">
+                  <div class="card info-card sales-card">
+
+                     <div class="card-body">
+                        <h5 class="card-title">Clusters <span>| Online</span></h5>
+                        <div class="d-flex align-items-center">
+                           <div class="card-icon rounded-circle d-flex align-items-center justify-content-center"> <i
+                                 class="bi bi-cpu"></i></div>
+                           <div class="ps-3">
+                              <h6>2</h6>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-3 col-md-4">
+                  <div class="card info-card revenue-card">
+                     <div class="card-body">
+                        <h5 class="card-title">Topics</h5>
+                        <div class="d-flex align-items-center">
+                           <div class="card-icon rounded-circle d-flex align-items-center justify-content-center"> <i
+                                 class="bi bi-newspaper"></i></div>
+                           <div class="ps-3">
+                              <h6>3</h6>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-3 col-xl-4">
+                  <div class="card info-card customers-card">
+                     <div class="card-body">
+                        <h5 class="card-title">Consumers <span>| active</span></h5>
+                        <div class="d-flex align-items-center">
+                           <div class="card-icon rounded-circle d-flex align-items-center justify-content-center"> <i
+                                 class="bi bi-people"></i></div>
+                           <div class="ps-3">
+                              <h6>1</h6>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-24">
+                  <div class="card recent-sales overflow-auto">
+                     <div class="card-body">
+                        <h5 class="card-title">Cluster details</h5>
+                        <table class="table table-borderless datatable">
+                           <thead>
+                              <tr>
+                                 <th scope="col">Cluster name</th>
+                                 <th scope="col">Brokers count</th>
+                                 <th scope="col">Partitions</th>
+                                 <th scope="col">Topics</th>
+                                 <th scope="col">Status</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Local</td>
+                                 <td>3</td>
+                                 <td>3</td>
+                                 <td>16</td>
+                                 <td><span class="badge bg-success">Online</span></td>
+                              </tr>
+                              <tr>
+                                 <td>DEV</td>
+                                 <td>3</td>
+                                 <td>3</td>
+                                 <td>16</td>
+                                 <td><span class="badge bg-danger">Offline</span></td>
+                              </tr>
+                              <tr>
+                                 <td>INT</td>
+                                 <td>3</td>
+                                 <td>3</td>
+                                 <td>16</td>
+                                 <td><span class="badge bg-secondary">Not connected</span></td>
+                              </tr>
+                              <tr>
+                                 <td>PROD</td>
+                                 <td>3</td>
+                                 <td>3</td>
+                                 <td>16</td>
+                                 <td><span class="badge bg-secondary">Not connected</span></td>
+                              </tr>
+
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</main>
