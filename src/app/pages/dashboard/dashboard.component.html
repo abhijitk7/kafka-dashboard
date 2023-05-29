@@ -12,9 +12,9 @@
       <div class="row">
          <div class="col-lg-16">
             <div class="row">
+               <!-- Cluster -->
                <div class="col-xxl-3 col-md-4">
                   <div class="card info-card sales-card">
-
                      <div class="card-body">
                         <h5 class="card-title">Clusters <span>| Online</span></h5>
                         <div class="d-flex align-items-center">
@@ -27,6 +27,24 @@
                      </div>
                   </div>
                </div>
+
+               <!-- Brokers -->
+               <div class="col-xxl-3 col-md-4">
+                  <div class="card info-card sales-card">
+                     <div class="card-body">
+                        <h5 class="card-title">Brokers </h5>
+                        <div class="d-flex align-items-center">
+                           <div class="card-icon rounded-circle d-flex align-items-center justify-content-center"> <i
+                                 class="bi bi-diagram-3"></i></div>
+                           <div class="ps-3">
+                              <h6>{{clusterInfo.brokerCount}}</h6>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Topics -->
                <div class="col-xxl-3 col-md-4">
                   <div class="card info-card revenue-card">
                      <div class="card-body">
@@ -35,12 +53,14 @@
                            <div class="card-icon rounded-circle d-flex align-items-center justify-content-center"> <i
                                  class="bi bi-newspaper"></i></div>
                            <div class="ps-3">
-                              <h6>3</h6>
+                              <h6>{{clusterInfo.topicCount}}</h6>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
+
+               <!-- Consumers -->
                <div class="col-xxl-3 col-xl-4">
                   <div class="card info-card customers-card">
                      <div class="card-body">

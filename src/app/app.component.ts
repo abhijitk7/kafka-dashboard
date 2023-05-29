@@ -1,13 +1,14 @@
 import { Component ,ElementRef} from '@angular/core';
 import { Router } from '@angular/router';
+import { ApiService } from './service/api.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'admindashboard';
-  constructor(private elementRef: ElementRef,  public  _router: Router) { }
+  title = 'Kafka Admin';
+  constructor(private elementRef: ElementRef,  public  _router: Router,private apiService:ApiService) { }
 
   ngOnInit() {
 
@@ -15,5 +16,10 @@ export class AppComponent {
     s.type = "text/javascript";
     s.src = "../assets/js/main.js";
     this.elementRef.nativeElement.appendChild(s);
+
+    this.apiService.connect().subscribe(res => {
+      console.log('data response', res);
+    });
+
   }
 }
